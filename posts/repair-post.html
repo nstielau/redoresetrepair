@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repair - Family Phrases</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    @page {
+      size: letter;
+      margin: 0.5in;
+    }
+
+    body {
+      font-family: 'Source Sans Pro', Georgia, serif;
+      background: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5in;
+    }
+
+    .card {
+      width: 7.5in;
+      max-width: 100%;
+      border: 3px solid #27ae60;
+      border-radius: 12px;
+      padding: 1.25rem 1.75rem;
+      position: relative;
+      background: #f5fff8;
+    }
+
+    /* Corner flourishes */
+    .card::before,
+    .card::after {
+      content: "~";
+      position: absolute;
+      font-size: 2rem;
+      color: #27ae60;
+      font-family: 'Playfair Display', serif;
+    }
+    .card::before {
+      top: 0.5rem;
+      left: 1rem;
+    }
+    .card::after {
+      bottom: 0.5rem;
+      right: 1rem;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #b8e6c9;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: #27ae60;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+    }
+
+    .tagline {
+      font-size: 1rem;
+      font-weight: 300;
+      color: #666;
+      font-style: italic;
+    }
+
+    .phrases {
+      list-style: none;
+      padding: 0.25rem 0;
+    }
+
+    .phrases li {
+      padding: 0.4rem 0;
+      border-bottom: 1px dotted #b8e6c9;
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.35;
+    }
+
+    .phrases li:last-child {
+      border-bottom: none;
+    }
+
+    .phrase-text {
+      font-weight: 400;
+      color: #222;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 0.75rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid #b8e6c9;
+      font-size: 0.85rem;
+      color: #888;
+      font-style: italic;
+    }
+
+    /* Print styles */
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+      .card {
+        border-width: 2px;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <h1>Repair</h1>
+      <p class="tagline">Words for mending connections and rebuilding trust.</p>
+    </div>
+
+    <ul class="phrases">
+      <li><span class="phrase-text">"I was wrong."</span></li>
+      <li><span class="phrase-text">"I hurt you."</span></li>
+      <li><span class="phrase-text">"This is on me."</span></li>
+      <li><span class="phrase-text">"I am truly sorry."</span></li>
+      <li><span class="phrase-text">"I hear you."</span></li>
+      <li><span class="phrase-text">"Your feelings are valid."</span></li>
+      <li><span class="phrase-text">"I will do better."</span></li>
+      <li><span class="phrase-text">"How can I make this right?"</span></li>
+      <li><span class="phrase-text">"What do you need from me?"</span></li>
+      <li><span class="phrase-text">"Take all the time you need."</span></li>
+      <li><span class="phrase-text">"I will keep showing up."</span></li>
+      <li><span class="phrase-text">"I will show you through my actions."</span></li>
+    </ul>
+
+    <div class="footer">
+      Repair takes courage. These words are the first step back to each other.
+    </div>
+  </div>
+</body>
+</html>
