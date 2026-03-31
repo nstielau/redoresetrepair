@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redo - Family Phrases</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    @page {
+      size: letter;
+      margin: 0.5in;
+    }
+
+    body {
+      font-family: 'Source Sans Pro', Georgia, serif;
+      background: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5in;
+    }
+
+    .card {
+      width: 7.5in;
+      max-width: 100%;
+      border: 3px solid #d35400;
+      border-radius: 12px;
+      padding: 1.25rem 1.75rem;
+      position: relative;
+      background: #fffaf5;
+    }
+
+    /* Corner flourishes */
+    .card::before,
+    .card::after {
+      content: "~";
+      position: absolute;
+      font-size: 2rem;
+      color: #d35400;
+      font-family: 'Playfair Display', serif;
+    }
+    .card::before {
+      top: 0.5rem;
+      left: 1rem;
+    }
+    .card::after {
+      bottom: 0.5rem;
+      right: 1rem;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #e8c9a8;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: #d35400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+    }
+
+    .tagline {
+      font-size: 1rem;
+      font-weight: 300;
+      color: #666;
+      font-style: italic;
+    }
+
+    .phrases {
+      list-style: none;
+      padding: 0.25rem 0;
+    }
+
+    .phrases li {
+      padding: 0.4rem 0;
+      border-bottom: 1px dotted #e8c9a8;
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.35;
+    }
+
+    .phrases li:last-child {
+      border-bottom: none;
+    }
+
+    .phrase-text {
+      font-weight: 400;
+      color: #222;
+    }
+
+    .phrase-note {
+      display: block;
+      font-size: 0.8rem;
+      color: #888;
+      font-weight: 300;
+      margin-top: 0.1rem;
+      padding-left: 1rem;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 0.75rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid #e8c9a8;
+      font-size: 0.85rem;
+      color: #888;
+      font-style: italic;
+    }
+
+    /* Print styles */
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+      .card {
+        border-width: 2px;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <h1>Redo</h1>
+      <p class="tagline">When words come out wrong, just ask for a do-over.</p>
+    </div>
+
+    <ul class="phrases">
+      <li>
+        <span class="phrase-text">"Can I have a redo?"</span>
+        <span class="phrase-note">simple, direct, works for everyone</span>
+      </li>
+      <li>
+        <span class="phrase-text">"Let me try that again."</span>
+        <span class="phrase-note">takes ownership without over-explaining</span>
+      </li>
+      <li>
+        <span class="phrase-text">"Rewind!"</span>
+        <span class="phrase-note">playful, breaks tension</span>
+      </li>
+      <li>
+        <span class="phrase-text">"That came out wrong. What I meant was..."</span>
+        <span class="phrase-note">when the words didn't match the intention</span>
+      </li>
+      <li>
+        <span class="phrase-text">"I didn't like how I said that."</span>
+        <span class="phrase-note">honest acknowledgment, models self-reflection</span>
+      </li>
+      <li>
+        <span class="phrase-text">"Wait, pause. Let me start over."</span>
+        <span class="phrase-note">buys a moment to collect yourself</span>
+      </li>
+      <li>
+        <span class="phrase-text">"That was my grumpy voice. Here's my kind voice..."</span>
+        <span class="phrase-note">names the problem concretely</span>
+      </li>
+      <li>
+        <span class="phrase-text">"I want to say that in a nicer way."</span>
+        <span class="phrase-note">clear intention, easy for kids too</span>
+      </li>
+      <li>
+        <span class="phrase-text">"Can we pretend I didn't say that?"</span>
+        <span class="phrase-note">lighter touch, good for minor slip-ups</span>
+      </li>
+      <li>
+        <span class="phrase-text">"Hold on — I need a redo."</span>
+        <span class="phrase-note">asserts the need without apology</span>
+      </li>
+    </ul>
+
+    <div class="footer">
+      Anyone can ask for a redo, anytime. No shame. Just try again kinder.
+    </div>
+  </div>
+</body>
+</html>
